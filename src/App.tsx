@@ -1,7 +1,7 @@
-import React from "react";
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Services from "./components/services";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import FeatureProducts from "./components/FeatureProducts";
 
 const App = () => {
   return (
@@ -9,6 +9,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Services />
+      <FeatureProducts />
     </main>
   );
 };

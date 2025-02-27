@@ -1,7 +1,7 @@
 import { BiSupport } from "react-icons/bi";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { RiRefund2Line, RiSecurePaymentLine } from "react-icons/ri";
-import ServiceCard from "./servicecard";
+import ServiceCard from "./ServiceCard";
 
 const servicesData = [
   {

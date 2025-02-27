@@ -1,4 +1,3 @@
-import React from "react";
 import { BiSupport } from "react-icons/bi";
 import { CiMenuFries, CiSearch } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa";

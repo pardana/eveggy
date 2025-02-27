@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-2">
