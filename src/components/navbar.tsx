@@ -1,9 +1,23 @@
+import { SetStateAction } from "react";
 import { BiSupport } from "react-icons/bi";
 import { CiMenuFries, CiSearch } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-const Navbar = () => {
+export interface IProductsProps {
+  id: number;
+  img: string;
+  name: string;
+  price: number;
+  quantity: number;
+}
+
+interface CartProps {
+  setCartOpen: React.Dispatch<SetStateAction<boolean>>;
+  cart: IProductsProps[];
+}
+
+const Navbar = ({ cart, setCartOpen }: CartProps) => {
   return (
     <nav className="sticky top-0 bg-white">
       <div className="container flex items-center justify-between gap-8 mb-4 pt-4">
@@ -25,10 +39,13 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-4 text-2xl text-gray-500">
-          <div className="relative cursor-pointer">
+          <div
+            className="relative cursor-pointer"
+            onClick={() => setCartOpen(true)}
+          >
             <MdOutlineShoppingCart />
             <div className="bg-accent size-5 text-white text-sm rounded-full grid place-items-center absolute top-[-13px] right-[-12px]">
-              0
+              {cart.length}
             </div>
           </div>
 
