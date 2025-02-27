@@ -12,7 +12,7 @@ interface CartProps {
 const Cart = ({ cart, setCart, setCartOpen }: CartProps) => {
   return (
     <div className="fixed left-0 top-0 w-full min-h-screen bg-[#00000060] overflow-y-scroll">
-      <div className="max-w-[480px] w-full min-h-full bg-white absolute right-0 top-0 p6">
+      <div className="max-w-[480px] w-full min-h-full bg-white absolute right-0 top-0 p-6">
         <div
           className="text-3xl absolute right-0 top-0 m-6 cursor-pointer"
           onClick={() => setCartOpen(false)}
@@ -20,7 +20,7 @@ const Cart = ({ cart, setCart, setCartOpen }: CartProps) => {
           <IoMdClose />
         </div>
 
-        <h2 className="pt-6 text-lg font-medium text-gray-600 uppercase">
+        <h2 className="pt-1 text-lg font-medium text-gray-600 uppercase">
           Your Cart
         </h2>
 
